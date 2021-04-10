@@ -1,0 +1,18 @@
+//Written By Dr NHA :)
+//
+//Head To This Url:
+//https://gta.fandom.com/wiki/Vehicles_in_GTA_Online
+//
+//Paste this Javascript Into Web Console
+
+document.getElementsByClassName("mw-headline")[4].outerHTML="<button class='btnHAX'>Download Images</button>";document.getElementsByClassName("btnHAX")[0].onclick=function(){
+var csv=0;var elems=document.getElementsByTagName("img"); for(csv=0;csv<elems.length;csv++){
+if(elems[csv].src.toString().includes("https://static.wikia.nocookie.net/gtawiki/images",0)){
+window.open(elems[csv].src.toString().replace("png","*").split('*')[0]+"png");
+}
+}
+};
+
+//A Button Will Appear Where Imagery Table title is!
+//This Button Will Scrape The Html And Open All The Car Images Ready For You To Download!
+//Thanks!!!
